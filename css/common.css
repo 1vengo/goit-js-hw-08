@@ -15,13 +15,12 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 24px;
   list-style: none;
-  padding: 0;
-}
-
-.gallery-item {
-  flex-basis: calc((100% - 30px) / 3);
+margin: 0;
+padding: 0;
+  width: 1440px;
+  height: 696px;
 }
 
 .gallery-link {
@@ -30,9 +29,3 @@ body {
   border-radius: 5px;
 }
 
-.gallery-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}

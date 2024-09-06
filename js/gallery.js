@@ -75,7 +75,7 @@ const gallery = images.map(({ preview, original, description }) => {
           src="${preview}"
           data-source="${original}"
           alt="${description}"
-          width="340px"
+          width="360px"
           height="200px"
         />
       </a>
@@ -86,16 +86,6 @@ const gallery = images.map(({ preview, original, description }) => {
 galleryContainer.innerHTML = gallery;
 
 
-galleryContainer.addEventListener('click', (event) => {
-  event.preventDefault();
-  const isGalleryImage = event.target.classList.contains('gallery-image');
-  if (!isGalleryImage) {
-    return;
-  }
-
-  const largeImageURL = event.target.dataset.source;
-  console.log(largeImageURL);
-});
 
 galleryContainer.addEventListener('click', (event) => {
   event.preventDefault();
