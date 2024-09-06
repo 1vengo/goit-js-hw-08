@@ -20,12 +20,6 @@ body {
 margin: 0;
 padding: 0;
   width: 1440px;
-  height: 696px;
 }
 
-.gallery-link {
-  display: block;
-  overflow: hidden;
-  border-radius: 5px;
-}
 
